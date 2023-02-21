@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+</head>
+<body>
+    <div className='cart'>
+              <div key="" className=''>
+  
+                <img src="" alt="" className='' />
+  
+                <div className=''>
+                  <h3 className=''>{item.tittle}</h3>
+                  <p className=''>{item.price.toLocaleString("es-AR", {style: "currency", currency: "ARS"})}</p>
+                  <p className=''>Cantidad: {item.quantity}</p>
+                </div>
+                <button>X</button>
+  
+              </div>
+  
+            <p className='total'>Total: {totalQuantity().toLocaleString("es-AR", {style: "currency", currency: "ARS"})}</p>
+  
+            <div className='botones-finalizacion'>
+  
+              <button>Vaciar carrito</button>
+  
+              <Link><button className='boton-agregarCart'>Finalizar comprar</button></Link>
+  
+            </div>
+      </div>
+</body>
+</html>
